@@ -76,6 +76,73 @@ yaml
 ---
 This version is visually organized with markdown formatting for easy readability. Just copy and paste it into your GitHub repository's README file. You can also replace the placeholder (`your-username`) with your GitHub username, and add any additional custom details you want!
 
+🚀 Running the Game on macOS with Wine
+To run this game on macOS, you'll need to install Wine, a compatibility layer that allows you to run Windows applications on macOS. Follow the steps below to set it up.
+
+Step 1: Install Homebrew
+Homebrew is a package manager for macOS that makes it easy to install software. Follow these steps to install Homebrew:
+
+Open the Terminal app (press Command + Space, type "Terminal", and hit Enter).
+Run the following command to install Homebrew:
+sh
+Copy
+Edit
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+Once the installation is complete, follow the on-screen instructions to finish setting up Homebrew.
+Step 2: Install Wine
+Now that you have Homebrew installed, use it to install Wine:
+
+In the Terminal, run:
+sh
+Copy
+Edit
+brew install --cask wine-stable
+Wine will be installed on your system. You can verify this by running:
+sh
+Copy
+Edit
+wine --version
+Step 3: Locate Your .exe File
+Find your .exe file (the game or installer you want to run).
+Use Finder to navigate to the folder where your .exe file is located.
+If you're unsure of the file's location, right-click on the file and select Get Info to see the full path.
+Step 4: Run the Game
+Open Terminal.
+
+Navigate to the folder containing the .exe file using the cd command. Example:
+
+sh
+Copy
+Edit
+cd /path/to/your/game
+Example for Desktop:
+
+sh
+Copy
+Edit
+cd ~/Desktop
+Run the game using Wine:
+
+sh
+Copy
+Edit
+wine gamefile.exe
+Example:
+
+sh
+Copy
+Edit
+wine mygame.exe
+Or, if you prefer not to navigate directories, provide the full path:
+
+sh
+Copy
+Edit
+wine /Users/yourusername/Desktop/mygame.exe
+🛠 Troubleshooting
+If you get errors or need further help, check the Wine FAQ for additional troubleshooting.
+Make sure your .exe file is compatible with Wine (some Windows applications may not run smoothly).
+
 
 
 
