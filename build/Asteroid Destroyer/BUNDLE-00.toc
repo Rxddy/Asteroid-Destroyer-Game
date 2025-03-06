@@ -1,0 +1,3 @@
+([('Asteroid Destroyer',
+   '/Users/ruddy/Desktop/Asteroid-Destoryer-Game/dist/Asteroid Destroyer',
+   'EXECUTABLE')],)
