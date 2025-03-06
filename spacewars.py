@@ -67,7 +67,7 @@ class Player(Sprite):
     def __init__(self, spriteshapes, color, startx, starty):
         super().__init__(spriteshapes, color, startx, starty)
         self.shapesize(stretch_wid=0.7, stretch_len=1.1)
-        self.speed = 4
+        self.speed = 2
         self.health = 100  # Player health
         self.health_bar = turtle.Turtle()
         self.health_bar.penup()
@@ -123,7 +123,7 @@ class Player(Sprite):
 class Enemy(Sprite):
     def __init__(self, spriteshapes, color, startx, starty):
         super().__init__(spriteshapes, color, startx, starty)
-        self.speed = 5
+        self.speed = 3
         self.health = 50  # Each enemy has health
         self.setheading(random.randint(0, 360))
 
@@ -141,7 +141,7 @@ class Enemy(Sprite):
 class Ally(Sprite):
     def __init__(self, spriteshapes, color, startx, starty):
         super().__init__(spriteshapes, color, startx, starty)
-        self.speed = 6
+        self.speed = 2
         self.setheading(random.randint(0, 360))
 
 # Health Pickup class
